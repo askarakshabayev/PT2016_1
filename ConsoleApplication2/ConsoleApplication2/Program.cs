@@ -10,8 +10,12 @@ namespace ConsoleApplication2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello world");
-            Console.Write("testing commit");
+            int a, b;
+            string s = Console.ReadLine();
+            string[] token = s.Split(); // 5 6 
+            a = int.Parse(token[0]);
+            b = int.Parse(token[1]);
+            Console.WriteLine(a + b);
             Console.ReadKey();
         }
     }
